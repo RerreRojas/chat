@@ -17,6 +17,6 @@ El template define la estructura de la aplicación con dos componentes CardUser 
        
 * Datos: La aplicación mantiene dos listas en su data(): usuarios y mensajes.
      
-* Ciclo de Vida:  -created: Este hook se ejecuta cuando la instancia del componente es creada y realiza una petición HTTP para obtener dos usuarios aleatorios desde la API https://randomuser.me/api.
+* Ciclo de Vida:  -created: Este hook se ejecuta cuando la instancia del componente es creada y realiza una petición HTTP para obtener dos usuarios aleatorios desde la  [API](https://randomuser.me/api).
 
 
