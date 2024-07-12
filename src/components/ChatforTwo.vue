@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  name: "ChatUser",
+  name: "ChatforTwo",
 
   props: {
       mensajes: Array,
@@ -69,5 +69,11 @@ export default {
   background-color: rgb(217, 230, 230);
   height: 67.5vh;
 }
-#texto{border-radius: 10px;}
+#texto{border-radius: 20px;
+  padding: 10px;
+  overflow-x: auto;
+ 
+
+}
+
 </style>
