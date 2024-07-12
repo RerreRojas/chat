@@ -1,14 +1,15 @@
 <template>
   <div id="scrollable" class="container">
-      <div v-for="(mensaje, index) in mensajes" :key="index">
+      <div  v-for="(mensaje, index) in mensajes" :key="index">
           <p :style="
-              { textAlign: mensaje.id === usuarios[0].id.value ? 'left' : 'right' }">
+              { textAlign: mensaje.id === usuarios[0].id.value ? 'left' : 'right', marginBottom: 0 , opacity: 0.6, fontSize: '15px' }">
               <small>{{ mensaje.nombreCompleto }}</small>
           </p>
-          <p id="texto" :style="{
-              backgroundColor: mensaje.color,
+          <p  :style="{
+
               textAlign: mensaje.id === usuarios[0].id.value ? 'left' : 'right',   color: isDarkColor(mensaje.color) ? 'white' : 'black',}">
-              {{ mensaje.texto }}
+              <span  id="texto" :style="{backgroundColor: mensaje.color,}">{{ mensaje.texto }}</span>
+              
           </p>
       </div>
   </div>
@@ -68,6 +69,7 @@ export default {
   overflow-y: scroll;
   background-color: rgb(217, 230, 230);
   height: 67.5vh;
+  padding:0 20px;
 }
 #texto{border-radius: 20px;
   padding: 10px;
@@ -75,5 +77,6 @@ export default {
  
 
 }
+
 
 </style>
