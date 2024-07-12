@@ -1,7 +1,7 @@
 <template>
   <CardUser :usuario="usuarios[0]" @enviarMensaje="enviarMensajeHandler" />
   <ChatforTwo :mensajes="mensajes" :usuarios="usuarios"/>
-  <CardUser :usuario="usuarios[1]" @enviarMensaje="enviarMensajeHandler" />
+  <CardUser :usuario="usuarios[1]" @enviarMensaje="enviarMensajeHandler" class="usuario1" />
 </template>
 
 
